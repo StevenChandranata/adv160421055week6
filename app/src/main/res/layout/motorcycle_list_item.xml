@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.motorcycleListAdapter">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/student_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="410dp"
+                android:layout_height="410dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="196dp"
+                    android:layout_height="123dp"
+                    android:layout_marginStart="107dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="107dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                <TextView
+                    android:id="@+id/txtID"
+                    android:layout_width="105dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="268dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="ID"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                <TextView
+                    android:id="@+id/txtBrand"
+                    android:layout_width="105dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="267dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="BRAND"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtID" />
+
+                <TextView
+                    android:id="@+id/txtModel"
+                    android:layout_width="105dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="267dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Model"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtBrand" />
+
+                <TextView
+                    android:id="@+id/txtYear"
+                    android:layout_width="106dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="267dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Year"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtModel" />
+
+                <TextView
+                    android:id="@+id/txtType"
+                    android:layout_width="105dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="266dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Type"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtYear" />
+
+                <TextView
+                    android:id="@+id/txtDisplacement"
+                    android:layout_width="105dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="262dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Displacement"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtType" />
+
+                <TextView
+                    android:id="@+id/txtColor"
+                    android:layout_width="107dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="262dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDisplacement" />
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="110dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="267dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Price"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtColor" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
